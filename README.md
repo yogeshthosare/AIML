@@ -1,40 +1,83 @@
 # Submission Checklist
 
-
 1. GitHub Repository Link containing: https://github.com/yogeshthosare/AIML
 
 - Complete source code - Done
 - requirements.txt - Done
 - A clear README.md - Done
-- Test data used in your experiments (csv) - test_data.csv - Done
+- Test data used in your experiments (csv) - test_data.csv Done
 
-2. Live Streamlit App Link: https://solid-space-trout-55464r4qj7f74v7-8501.app.github.dev/
+>link: https://github.com/yogeshthosare/AIML
+
+2. Live Streamlit App Link
 
 
 - Deployed using Streamlit Community Cloud - Done
 - Must open an interactive frontend when clicked - Done
 
-- Streamlit application Link: https://github.com/yogeshthosare/AIML/blob/main/streamlit_application_evidence.png
+>link : https://yogeshthosare-aiml-app-y6g6jc.streamlit.app/
 
 3. Screenshot
 
 - Upload screenshot of assignment execution on BITS Virtual Lab
 - App loads without errors / All required features implemented
 
-4. The Github README content (details mentioned in Section 3 - Step 5): https://github.com/yogeshthosare/AIML/blob/main/README.md
+>link 1: https://github.com/yogeshthosare/AIML/blob/main/Streamlit_Application_BITS_Virtual_Lab_01.png
+
+>link 2: https://github.com/yogeshthosare/AIML/blob/main/Streamlit_Application_BITS_Virtual_Lab_02.png
+
+>link 3: https://github.com/yogeshthosare/AIML/blob/main/Streamlit_Application_BITS_Virtual_Lab_03.png
+
+>link 4: https://github.com/yogeshthosare/AIML/blob/main/Streamlit_Application_BITS_Virtual_Lab_04.png
+
+>link 5: https://github.com/yogeshthosare/AIML/blob/main/Streamlit_Application_BITS_Virtual_Lab_05.png
+
+4. The Github README content (details mentioned in Section 3 - Step 5)
 
 - should also be part of the submitted PDF file.
 
-# Breast Cancer Diagnostic Classification Dashboard
+>link: https://github.com/yogeshthosare/AIML/blob/main/README.md
 
-An interactive machine learning web application built with **Streamlit** that classifies breast tumours as **Benign** or **Malignant** using five classification algorithms. The dashboard provides live model evaluation, side-by-side model comparison, confusion matrix visualisation, and an adjustable decision threshold.
+# Assignment Details
+
+## Step 1: Dataset Choice 
+
+## Step 2: Machine Learning Classification models and Evaluation metrics
+
+## Step 3: Prepare Your GitHub Repository
+
+## Step 4: Create requirements.txt
+
+## Step 5: README.md with the following structure
+
+### a. Problem statement
+
+#### Breast Cancer Diagnostic Classification Dashboard
+
+An interactive machine learning web application built with **Streamlit** that classifies breast tumours as **Benign** or **Malignant** using five classification algorithms. The dashboard provides live model evaluation, side-by-side model comparison, confusion matrix visualisation, and an adjustable decision threshold is also supported.
 
 ---
 
-## Project Structure
+### b. Dataset description
+
+**Wisconsin Breast Cancer Diagnostic Dataset**
+
+| Property | Value |
+|----------|-------|
+| Source | UCI ML Repository / Kaggle |
+| Samples | 569 |
+| Features | 30 numeric (cell nucleus measurements: mean, SE, worst) |
+| Target | `diagnosis` — `M` (Malignant = 1) / `B` (Benign = 0) |
+| Class balance | 357 Benign (63%) / 212 Malignant (37%) |
+
+Dropped during preprocessing: `id` (identifier), `Unnamed: 32` (empty column).
+
+### c. Github Repository Link [for maintaining the github repo with all required files]
+
+>link: https://github.com/yogeshthosare/AIML
 
 ```
-AIML-2/
+ML-ASSIGNMENT-SECONDSEM
 ├── app.py                    # Streamlit dashboard (main application)
 ├── data.csv                  # Wisconsin Breast Cancer dataset (569 samples, 30 features)
 ├── test_data.csv             # Auto-generated 20% test split used by the app
@@ -51,21 +94,53 @@ AIML-2/
 
 ---
 
-## Dataset
+### d. Models Used: [ 5 marks - 1 marks for all the metrics for each model ] 
 
-**Wisconsin Breast Cancer Diagnostic Dataset**
+- Comparison Table with the evaluation metrics calculated for all the models
 
-| Property | Value |
-|----------|-------|
-| Source | UCI ML Repository / Kaggle |
-| Samples | 569 |
-| Features | 30 numeric (cell nucleus measurements: mean, SE, worst) |
-| Target | `diagnosis` — `M` (Malignant = 1) / `B` (Benign = 0) |
-| Class balance | 357 Benign (63%) / 212 Malignant (37%) |
+| Model | Accuracy | AUC Score | Precision | Recall | F1 Score | MCC Score |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| **Logistic Regression** | 0.9649 | 0.9960 | 0.9750 | 0.9286 | 0.9512 | 0.9245 |
+| **Decision Tree** | 0.9211 | 0.9448 | 0.9459 | 0.8333 | 0.8861 | 0.8299 |
+| **K-Nearest Neighbors (KNN)** | 0.9561 | 0.9823 | 0.9744 | 0.9048 | 0.9383 | 0.9058 |
+| **Naive Bayes** | 0.9211 | 0.9891 | 0.9231 | 0.8571 | 0.8889 | 0.8292 |
+| **Random Forest** | 0.9737 | 0.9929 | 1.0000 | 0.9286 | 0.9630 | 0.9442 |
 
-Dropped during preprocessing: `id` (identifier), `Unnamed: 32` (empty column).
+>link: https://github.com/yogeshthosare/AIML/blob/main/All_Models_Performance_Comparison
 
----
+- Observations on the performance of each model on the chosen dataset.
+
+| ML Model Name | Observation about model performance |
+| :--- | :--- |
+| **Logistic Regression** | Performed strongly with high overall accuracy (96.49%), tied for the highest recall (92.86%), and achieved the highest AUC score (0.996), making it a top-tier linear baseline. |
+| **Decision Tree** | Lowest overall performing model with the lowest recall (83.33%) and AUC score (0.945), indicating high false negatives and potential overfitting. |
+| **kNN** | Delivered strong performance with high accuracy (95.61%) and high precision (97.44%), effective at minimizing false positives. |
+| **Naive Bayes** | Achieved good AUC score (0.989) indicating strong class separation, but had lower precision (92.31%) and recall (85.71%) relative to top models. |
+| **Random Forest (Ensemble)** | Top-performing model across all key metrics, achieving the highest accuracy (97.37%) and perfect precision (1.00) with zero false positives. |
+| **Overall Winner for your dataset?** | **Random Forest (Ensemble)** yields the best overall accuracy (97.37%), highest F1 score (0.963), and perfect precision without compromising on recall (92.86%). |
+
+## Step 6: Deploy on Streamlit Community Cloud
+
+>link : https://yogeshthosare-aiml-app-y6g6jc.streamlit.app/
+
+### a. Dataset upload option (CSV) [As streamlit free tier has limited capacity, upload only test data] [ 1 mark ]
+
+2 test datasets are given in the github repository, those can be uploaded from UI.
+
+>link 1: https://github.com/yogeshthosare/AIML/blob/main/test_data.csv
+>link 2: https://github.com/yogeshthosare/AIML/blob/main/test_data_20.csv
+
+### b. Model selection dropdown (if multiple models) [ 1 mark ]
+
+>link: https://github.com/yogeshthosare/AIML/blob/main/Streamlit_Application_BITS_Virtual_Lab_05.png
+
+### c. Display of evaluation metrics [ 1 mark ]
+
+>link: https://github.com/yogeshthosare/AIML/blob/main/All_Models_Performance_Comparison
+
+### d. Confusion matrix or classification report [ 1 mark ]
+
+>link: https://github.com/yogeshthosare/AIML/blob/main/Streamlit_Application_BITS_Virtual_Lab_03.png
 
 ## Setup & Installation
 

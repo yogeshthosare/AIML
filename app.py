@@ -152,7 +152,7 @@ if df_test is not None and model is not None and scaler is not None:
                 [f"False Negatives\n(FNs)\n{fn:,}", f"True Positives\n(TPs)\n{tp:,}"]
             ])
 
-            fig, ax = plt.subplots(figsize=(5, 4.5))
+            fig, ax = plt.subplots(figsize=(3.5, 4))
             sns.heatmap(
                 cm,
                 annot=labels_tl,
