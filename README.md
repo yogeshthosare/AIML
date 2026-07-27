@@ -1,33 +1,29 @@
 # Submission Checklist
 
 
-1. GitHub Repository Link containing
+1. GitHub Repository Link containing: https://github.com/yogeshthosare/AIML
 
-- Complete source code
-- requirements.txt
-- A clear README.md
-- Test data used in your experiments (csv)
+- Complete source code - Done
+- requirements.txt - Done
+- A clear README.md - Done
+- Test data used in your experiments (csv) - test_data.csv - Done
 
-2. Live Streamlit App Link
+2. Live Streamlit App Link: https://solid-space-trout-55464r4qj7f74v7-8501.app.github.dev/
 
-- Deployed using Streamlit Community Cloud
-- Must open an interactive frontend when clicked
+
+- Deployed using Streamlit Community Cloud - Done
+- Must open an interactive frontend when clicked - Done
+
+- Evidence - 
 
 3. Screenshot
 
 - Upload screenshot of assignment execution on BITS Virtual Lab
+- App loads without errors / All required features implemented
 
-4. The Github README content (details mentioned in Section 3 - Step 5) should
+4. The Github README content (details mentioned in Section 3 - Step 5): https://github.com/yogeshthosare/AIML/blob/main/README.md
 
-- also be part of the submitted PDF file.
-
-5. App loads without errors / All required features implemented
-
-- Screenshot link 
-
-6. README.md updated and added in the submitted PDF
-
-- Link to this Readme is given
+- should also be part of the submitted PDF file.
 
 # Breast Cancer Diagnostic Classification Dashboard
 
