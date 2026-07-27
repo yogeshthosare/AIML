@@ -32,6 +32,16 @@
 
 >link 5: https://github.com/yogeshthosare/AIML/blob/main/Streamlit_Application_BITS_Virtual_Lab_05.png
 
+>link 6: https://github.com/yogeshthosare/AIML/blob/main/LogisticRegression.png
+
+>link 7: https://github.com/yogeshthosare/AIML/blob/main/DecisionTree.png
+
+>link 8: https://github.com/yogeshthosare/AIML/blob/main/KNN.png
+
+>link 9: https://github.com/yogeshthosare/AIML/blob/main/NaiveBayes.png
+
+>link 10: https://github.com/yogeshthosare/AIML/blob/main/RandomForest.png
+
 4. The Github README content (details mentioned in Section 3 - Step 5)
 
 - should also be part of the submitted PDF file.
@@ -141,6 +151,18 @@ ML-ASSIGNMENT-SECONDSEM
 ### d. Confusion matrix or classification report [ 1 mark ]
 
 >link: https://github.com/yogeshthosare/AIML/blob/main/Streamlit_Application_BITS_Virtual_Lab_03.png
+
+- The results of different models on your “test data” should be visible on the streamlit app.
+
+>link 1: https://github.com/yogeshthosare/AIML/blob/main/LogisticRegression.png
+
+>link 2: https://github.com/yogeshthosare/AIML/blob/main/DecisionTree.png
+
+>link 3: https://github.com/yogeshthosare/AIML/blob/main/KNN.png
+
+>link 4: https://github.com/yogeshthosare/AIML/blob/main/NaiveBayes.png
+
+>link 5: https://github.com/yogeshthosare/AIML/blob/main/RandomForest.png
 
 ## Setup & Installation
 
