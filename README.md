@@ -6,6 +6,7 @@
 - requirements.txt - Done
 - A clear README.md - Done
 - Test data used in your experiments (csv) - test_data.csv Done
+  Application directly uses default data test_data.csv taken from Train-Test split when webpage is opened, use upload test data option to upload test data. 
 
 >link: https://github.com/yogeshthosare/AIML
 
